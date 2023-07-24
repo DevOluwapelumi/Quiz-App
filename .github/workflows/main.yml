@@ -1,0 +1,45 @@
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+    
+    jobs:
+  devcard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: devcard
+        uses: dailydotdev/action-devcard@2.0.4
+        with:
+          devcard_id: ${{ secrets.DEVCARD_ID }}
+
+
+name: DevCard
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  devcard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: devcard
+        uses: dailydotdev/action-devcard@2.0.2
+        with:
+          devcard_id: ${{ secrets.DEVCARD_ID }}
+          
+          
+          https://api.daily.dev/devcards/f6f10f52854a45a098a0185b693ce881.png?r=r3N
