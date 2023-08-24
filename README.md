@@ -1,5 +1,5 @@
 # Quiz-App
-I created this Quiz Application when I was on my IT(SIWES) at LAUTECH...with HTML, CSS and JAVASCRIPT.
+I created this Quiz Application when I was on my IT(SIWES) at LAUTECH...with HTML, CSS, and JAVASCRIPT.
 
 
 
